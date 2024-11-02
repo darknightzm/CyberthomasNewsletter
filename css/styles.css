@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-area {
+    size: 20px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    image-rendering: auto;
+    
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+}
+
+.hero input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.testimonials {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.subscriber-count {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    margin: 0 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-carousel {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}
