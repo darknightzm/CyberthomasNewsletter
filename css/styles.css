@@ -1,7 +1,14 @@
-body {
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     color: #333;
 }
 
@@ -15,25 +22,28 @@ header {
 }
 
 .logo-area {
-    size: 20px;
-    padding: 20px 20px;
+    padding: 4px;
     border-radius: 20px;
     image-rendering: auto;
-    
+    height: 40px;
+    cursor: pointer;
 }
-.nav ul {
+
+nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
 }
 
 nav ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin-left: 20px;
+    font-size: 16px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #e2e2e2;
     font-weight: bold;
 }
 
@@ -65,20 +75,33 @@ nav a {
     margin-right: 10px;
 }
 
-.hero button {
+button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
-    border: none;
+    border: 2px solid #0056b3;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.hero button:hover {
-    background-color: #0056b3;
+button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border: 2px solid #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .testimonials {
